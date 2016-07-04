@@ -12,7 +12,7 @@ import requests
 wordlist = "wordlist_tdk.txt"
 chars = "abcçdefgğhıijklmnoöprsştuüvyzABCÇDEFGĞHIİJKLMNOÖPRSŞTUÜVYZ"
 chars_len = len(chars)
-keyword_interval = {0:2, 1:3}
+keyword_interval = {0:2, 1:15}
 
 def charToIndex(char):
     return chars.index(char)
