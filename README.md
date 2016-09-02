@@ -29,7 +29,12 @@ if you want to update the wordlist
 $ cp wordlist_tdk.txt wordlist_tdk_old.txt
 $ python create_wordlist.py
 ```
-
 this process will take slightly longer
+##### OR
+
+- Go https://tr.wiktionary.org
+- Create a new book (https://tr.wiktionary.org/wiki/Özel:Kitap)
+- Selected all char
+- download book!
 
 2k16, omercitak.com
