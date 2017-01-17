@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>rhymer | Benzer Kelime Bulma Aracı</title>
+    <meta name="description" content="rhymer.js, rhymer, ömer çıtak, levenshtein">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <meta name="twitter:card" value="summary_large_image"/>
+    <meta name="twitter:site" value="@om3rcitak"/>
+    <meta name="twitter:creator" value="@om3rcitak"/>
+    <meta name="twitter:url" value="http://om3rcitak.github.io/rhymer/"/>
+    <meta name="twitter:title" value="rhymer.js &#8211; Benzer Kelime Bulma Aracı, Similar Word Find Tool | Ömer Çıtak"/>
+    <meta name="twitter:description" value="rhymer.js, rhymer, ömer çıtak, levenshtein"/>
+    <meta name="twitter:image" value="http://omercitak.com/wp-content/uploads/rhymer.png"/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:site_name" content="rhymer.js &#8211; Benzer Kelime Bulma Aracı | Ömer Çıtak | Om3rCitak"/>
+    <meta property="og:title" content="rhymer.js &#8211; Benzer Kelime Bulma Aracı | Ömer Çıtak | Om3rCitak"/>
+    <meta property="og:url" content="http://om3rcitak.github.io/rhymer/"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:description" content="ömer çıtak, om3rcitak, security, development, php, vulnerability, ethical hacking"/>
+    <meta property="og:image" content="http://omercitak.com/wp-content/uploads/rhymer.png"/>
+    <link rel="canonical" href="http://om3rcitak.github.io/rhymer/"/>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="rhymer.css"/>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="jquery.color.min.js"></script>
+    <script type="text/javascript" src="jquery.animateNumber.min.js"></script>
+    <script type="text/javascript" src="share.js"></script>
+    <script type="text/javascript" src="levenshtein.js"></script>
+    <script type="text/javascript" src="rhymer.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="">rhymer | Benzer Kelime Bulma Aracı</a>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="jumbotron">
+        <p>Toplam <span id="target" style="font-size: 14px; color: red;">0</span> kelime arasından kafiyeli olanları listeler!</p>
+        <div class="row">
+            <div class="col-md-8">
+                <h3 class="form-signin-heading">Kelime;</h3>
+                <input type="text" id="word" class="form-control" placeholder="Lütfen kafiye yapmak istediğiniz kelimeyi girin" required autofocus>
+            </div>
+            <div class="col-md-4">
+                <h3 class="form-signin-heading">Yakınlık derecesi;</h3>
+                <select name="" id="depth" class="form-control">
+                    <option value="1">tam eşleşenler</option>
+                    <option value="2">çoğunlukla eşleşenler</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <button class="btn btn-md btn-primary btn-block">Kafiyeli kelimeleri bul!</button>
+        </div>
+        <div class="row">
+            <div class="results">
+                <h3>Sonuçlar; <i><a>(temizle)</a></i></h3>
+                <ol>
+                </ol>
+                <div class='share-button share-button-top'></div>
+            </div>
+        </div>
+    </div>
+</div> <!-- /container -->
+
+<div class="footer">
+    This tool coded by <a href="http://omercitak.com/" target="_blank">Omer Citak</a>, detail; <a href="https://github.com/Om3rCitak/rhymer" target="_blank">github.com/Om3rCitak/rhymer</a>
+</div>
+
+</body>
+</html>

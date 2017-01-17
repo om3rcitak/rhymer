@@ -1,0 +1,41 @@
+/**
+ * Created by PhpStorm.
+ * User: omer
+ * Date: 1/17/2017
+ * Time: 6:13 PM
+ */
+
+body {
+    padding-top: 70px;
+}
+
+.jumbotron p {
+    text-align: center;
+}
+
+button {
+    margin-top: 10px;
+}
+
+.results {
+    display: none;
+}
+
+.results a {
+    cursor: pointer;
+}
+
+.navbar .container {
+    text-align: center;
+}
+
+.navbar-brand {
+    float: none;
+    line-height: 50px;
+}
+
+.footer {
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+}
