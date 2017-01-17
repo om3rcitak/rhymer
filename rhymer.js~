@@ -42,7 +42,6 @@ function rhymer(words) {
 
     var word = $('#word').val();
     var depth = $('#depth').val();
-	$(".results ol").empty();
 
     // var share_button_top = new Share(".share-button-top", {
     //     title: "rhymer | " + word + " kelimesi ile kafiyeli kelimeler",
