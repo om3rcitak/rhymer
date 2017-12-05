@@ -1,5 +1,7 @@
 # rhymer
-rhymer, find the nearest word is a word using levenshtein algorithm helps make the rhyme songwriter.
+rhymer, find the nearest word is a word using levenshtein algorithm helps make the rhyme songwriter. Thanks [@ugurarici](https://github.com/ugurarici) for idea.
+
+Live version: https://om3rcitak.github.io/rhymer/
 
 # levenshtein algorithm 
 
